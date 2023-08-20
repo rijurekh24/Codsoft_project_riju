@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency Landing page by Riju</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3f8256dd02.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <section id="nav_bar">
+
+        <nav class="navbar navbar-expand-lg  bg-body-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <h1 class="design"><i class="fa-solid fa-plane fa-rotate-45 px-1"></i>Travel Agency</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nav_bar2">Catagory</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Vlog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- LOG IN  POP UP NAV BAR -->
+                <button class="btn navbarbtn px-4 py-2 " data-toggle="modal" data-target="#loginModal" type="button">Log
+                    in</button>
+                <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header border-bottom-0">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-title text-center">
+                                    <h4>Login</h4>
+                                </div>
+                                <div class="d-flex flex-column text-center">
+                                    <form>
+                                        <div class="form-group py-2">
+                                            <input type="email" class="form-control" id="email1"
+                                                placeholder="Your email address...">
+                                        </div>
+                                        <div class="form-group py-3">
+                                            <input type="password" class="form-control" id="password1"
+                                                placeholder="Your password...">
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-block btn-round navbarbtn py-2 px-3">Login</button>
+                                    </form>
+
+                                    <div class="text-center text-muted delimiter">or use a social network</div>
+                                    <div class="d-flex justify-content-center social-buttons py-3">
+                                        <button type="button" class="btn" data-toggle="tooltip" data-placement="top"
+                                            title="Google">
+                                            <i class="fa-brands fa-google fa-xl "></i>
+                                        </button>
+
+                                        <button type="button" class="btn btn-round" data-toggle="tooltip"
+                                            data-placement="top" title="Facebook">
+                                            <i class="fa-brands fa-facebook fa-xl"></i>
+                                        </button>
+
+                                        <button type="button" class="btn" data-toggle="tooltip" data-placement="top"
+                                            title="Twitter">
+                                            <i class="fa-brands fa-twitter fa-xl"></i>
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center">
+                                <div class="signup-section">Not a member yet? <a href="#a" style="color: #FF9051;"> Sign
+                                        Up</a>.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </nav>
+
+    </section>
+    <!-- intro 1-->
+    <section id="intro1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 py-7 px-5">
+                    <br><br><br><br>
+                    <h1>Explore</h1>
+                    <h1 class="text-design">Beautiful </h1>
+                    <h1>World!</h1>
+                </div>
+                <div class="col-lg-6">
+                    <img src="pic/travel-concept-with-baggage.jpg" class="img_intro" alt="">
+                </div>
+            </div>
+
+            <div class="row Search">
+                <div class="box px-3">
+                    <div class="btn-group">
+                        <button type="button" class="btn  rounded-end-0 dropdown-toggle px-2 py-2 "
+                            data-bs-toggle="dropdown" aria-expanded="false"
+                            style="color: #1DAEFF; font-weight: bold; font-size: 14px !important;">
+                            Choose Location
+                        </button>
+                        <button type="button" class="btn   rounded-0 dropdown-toggle px-3 bt"
+                            data-bs-toggle="dropdown" aria-expanded="false"
+                            style="color: #1DAEFF; font-weight: bold; font-size: 14px !important;">
+                            Choose Date
+                        </button>
+                        <button type="button" class="btn  rounded-0 dropdown-toggle  px-3 bt"
+                            data-bs-toggle="dropdown" aria-expanded="false"
+                            style="color: #1DAEFF; font-weight: bold; font-size: 14px !important;">
+                            Price Range
+                        </button>
+                        <button type="button" class="btn  rounded-end px-5 "
+                            style="background-color: #1DAEFF; color: white; font-weight: bold; font-size: 16px !important;"
+                            aria-expanded="false">
+                            Search
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- second navbar -->
+
+    <section id="nav_bar2">
+
+        <br><br><br><br>
+        <nav class="navbar navbar-expand-lg  bg-body-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <h1 class="design"><i class="fa-solid fa-earth-americas px-1"></i>Popular Place</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end px-4" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" style="color: #FF9051;" aria-current="page" href="#">Beach</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mountain</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Waterfalls</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Icebergs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #FF9051; font-weight: bolder;" href="#">View All</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+    </section>
+    <br><br><br>
+    <!-- cards section -->
+
+    <div class="container d-flex justify-content-center">
+        <div class="row">
+            <div class="col px-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="pic/blue-villa-beautiful-sea-hotel.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hulhumale Beach</h5>
+                        <p class="card-text">Maldives</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col px-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="pic/woman-walking-railay-beach-krabi-thailand.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Railay Beach</h5>
+                        <p class="card-text">Thailand</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col px-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="pic/tropical-beach.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Honolulu Beach</h5>
+                        <p class="card-text">America</p>
+
+                    </div>
+                </div>
+            </div>
+
+            
+            
+
+        </div>
+    </div>
+
+    <!-- intro 2 -->
+    <br><br><br><br><br>
+    <section id="about">
+        <br><br>
+        <div class="container">
+            <div class="row text-center head">
+                <div class="col-lg-6">
+                    <img src="pic/tourist-presenting-something.jpg" alt="" style="width: 60%;">
+                </div>
+                <div class="col-lg-6">
+                    <h2>Explore all corners of</h2>
+                    <h2>The World with us</h2>
+                    <p>Travel is fatal to prejudice, and narrow mindedness, And many of our people need it sorely on
+                        these accounts.
+                        And many of our people need it sorely.
+                    </p>
+
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col py-4"><i class="fa-solid fa-plane fa fa-2x px-3"></i><span>Flight</span>
+                            </div>
+                            <div class="col py-4"><i class="fa-solid fa-hotel fa fa-2x px-3"></i><span>Hotel</span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col"><i class="fa-solid fa-wifi fa fa-2x px-3"></i><span>Wifi</span></div>
+                            <div class="col"><i class="fa-solid fa-burger fa fa-2x px-3"></i> </i><span>Food</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br>
+
+    <!-- gallery -->
+
+    <section id="gallery">
+
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <h1 class="design"><i class="fa-solid fa-camera-retro px-1"></i>Our Gallery</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#" style="color: #FF9051; font-weight:700;">More
+                                    Items</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="row py-4">
+                <div class="col">
+                    <img src="/pictures/giau-tran-ZMdXvd6jGww-unsplash.jpg" class="img-fluid rounded "
+                        alt="">
+                </div>
+                <div class="col">
+                    <img src="/pictures/young-woman-hiker-taking-photo-with-smartphone-mountains-peak-winter.jpg"
+                        class="img-fluid rounded " alt="">
+
+                </div>
+                <div class="col">
+                    <img src="/pictures/westwind-air-service-fYSl60PXAnM-unsplash.jpg"
+                        class="img-fluid rounded " alt="">
+
+                </div>
+                <div class="row py-4 px-5">
+                    <div class="col">
+
+                        <img src="/pictures/brett-meliti-PiLF4d6HlaU-unsplash.jpg"
+                            class="img-fluid rounded " alt="">
+                    </div>
+                    <div class="col">
+                        <img src="/pictures/liam-simpson-umycmizZHn8-unsplash.jpg"
+                            class="img-fluid rounded " alt="">
+
+                    </div>
+                    <div class="col">
+                        <img src="/pictures/loly-galina-pDXHk0DP0q8-unsplash.jpg"
+                            class="img-fluid rounded " alt="">
+
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- boxes grid -->
+
+
+    <div class="container py-5">
+        <div class="row text-center">
+            <div class="col-lg-2 boxgrid">
+                <h3>30+</h3>
+                <h5>Cities</h5>
+            </div>
+            <div class="col-lg-2 boxgrid">
+                <h3>250+</h3>
+                <h5>Places</h5>
+            </div>
+            <div class="col-lg-2 boxgrid">
+                <h3>600+</h3>
+                <h5>Hotels</h5>
+            </div>
+            <div class="col-lg-2 boxgrid">
+                <h3>4k+</h3>
+                <h5>Review</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- signup newsletter -->
+
+    <div class="container d-flex justify-content-center">
+        <div class="row text-center">
+            <div class="col">
+                <h2>Sign Up to our newsletter</h2>
+                <div class="input-group py-5 ">
+                    <div class="form-outline">
+                        <input type="search" id="form1" class="form-control py-3"
+                            placeholder="Enter Your Email Address" />
+                    </div>
+                    <button type="button"
+                        style="background-color: #1DAEFF; color: white; width: 100px; font-weight: 500;"
+                        class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer id="contact" class="text-center">
+        <div class="container d-flex justify-content-center">
+            <footer class="py-3">
+                <div class="row text-center">
+                    <div class="col-lg-3">
+                        <h2>Travel Agency</h2>
+                        <p>
+                            Travel is fatal to prejudice, and narrow mindedness,
+                            And many of our people.
+                        </p>
+                        <div class="container">
+                            <div class="row py-2">
+                                <div class="col-3"><i class="fa-brands fa-facebook fa-xl"></i></div>
+                                <div class="col-3"><i class="fa-brands fa-instagram fa-xl"></i></div>
+                                <div class="col-3"><i class="fa-brands fa-twitter fa-xl"></i></div>
+                                <div class="col-3"><i class="fa-brands fa-linkedin fa-xl"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 ">
+                        <h5>Quick Link</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#nav_bar2" class="nav-link p-0 text-muted">Catagory</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#gallery" class="nav-link p-0 text-muted">Blog</a></li>
+                            <li class="nav-item mb-2"><a href="#about" class="nav-link p-0 text-muted">About Us</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <h5>Quick Link</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy Policy</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terms & Conditions</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Support</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <h5>Contact Us</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
+                                        class="fa-solid fa-location-dot px-2"></i>India</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
+                                        class="fa-solid fa-phone px-2"></i>+91 9347234934</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
+                                        class="fa-solid fa-envelope px-2"></i>abc@gmail.com</a></li>
+
+
+                    </div>
+
+
+
+                    <div class="d-flex flex-column flex-sm-row justify-content-center py-4 my-4 border-top">
+                        <p><strong>©</strong> 2023 Rijurekh Ghosh</p>
+                        <ul class="list-unstyled d-flex">
+                            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#twitter"></use>
+                                    </svg></a></li>
+                            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#instagram"></use>
+                                    </svg></a></li>
+                            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#facebook"></use>
+                                    </svg></a></li>
+                        </ul>
+                    </div>
+            </footer>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+    $('#loginModal').modal('show');
+    $(function(){
+        $('[data-toggle="tooltip"]').tooltip()  
+    })});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+</body>
+
+</html>

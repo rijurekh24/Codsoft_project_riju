@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #b7b7b7;
+    font-family: sans-serif;
+    outline: none;
+    color: black;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .calculator{
+    background-color: #282828;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 15px 20px 35px #1e1e1e,
+    -1px -1px 5px black;
+    border: 2px solid gray;
+    display: grid;
+    grid-template-columns: repeat(4,68px);
+
+ }
+input[type=button],button{
+    height: 48px;
+    width: 48px;  
+    border: none;
+    border-radius: 30%;
+    margin: 8px;
+    font-size: 18px;
+ }
+
+
+ #display{
+    grid-column: span 4;
+    height: 70px;
+    width: 260px;
+    background-color: #98D1DC;
+    box-shadow: inset 6px 6px 30px #1a8da4,
+                inset -6px -6px 30px  #409eb1;
+    border: none;
+    border-radius: 15px;
+    color: rgb(45, 44, 44);
+    font-size: 40px;
+    text-align: end;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+ }
+
+ #equal{
+    width: 115px;
+    border-radius: 20px;
+    background-color: #FF731B !important;
+    box-shadow: inset 4px 4px 30px #b24704,
+                inset -4px -4px 30px  #e15e0c;
+
+ }
+
+ #equal:hover{
+   background: #f8a571 !important;
+ }
+
+ .num{
+   background-color: rgb(176, 176, 176) !important;
+   box-shadow: inset 4px 4px 30px rgb(85, 85, 85),
+                inset -4px -4px 30px  gray;
+ }
+
+ .num:hover{
+   background: #ededed !important; }
+
+#AC ,#CE{
+  background-color: rgb(224,17,17) !important;
+  color: white !important;
+  box-shadow: inset 3px 3px 15px rgb(133, 4, 4),
+                inset -3px -3px 15px  rgb(190, 3, 3);
+}
+
+#AC:hover ,#CE:hover{
+   background: rgb(216, 56, 56) !important;
+ }
+
+.cal{
+   background-color: #B5B5B5 !important;
+   box-shadow: inset 3px 3px 20px rgb(128, 128, 128),
+                inset -3px -3px 20px  rgb(146, 146, 146);
+}
+
+.cal:hover 
+{
+       background: #ededed !important;
+}
+

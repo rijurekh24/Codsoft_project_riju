@@ -1,0 +1,149 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbarbtn{
+    background-color: #FF9051 !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.nav-item{
+    color: gray !important;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-item :hover{
+    text-decoration: underline; 
+    color: #FF9051 !important;
+    transition: 0.3s;
+}
+.navbarbtn:hover{
+    background-color: #fd701e !important;
+    transition: 0.3s;
+   
+}
+
+.img_intro{
+    width: 130% !important;
+}
+
+.row h1{
+    font-size: 80px;
+}
+
+.Search{
+    position: absolute;
+    bottom: 100px;
+
+}
+
+.box button{
+    padding: 16px;
+   
+}
+
+.navbar-nav > li{
+    padding-left:15px;
+    padding-right:15px;
+  }
+
+.head h2{
+
+    font-size: 50px !important;
+    padding-bottom:5px;
+}
+
+.head p{
+    padding-top: 30px;
+    font-size: 17px;
+    font-weight: 400;
+    color: gray;
+}
+
+span{
+    font-size: 25px;
+    padding-left: 10px;
+    font-weight: 500;
+}
+
+.fa{
+    color: #FF9051 !important;
+    /* border: 3px dotted gray; */
+    padding: 17px;
+    border-radius: 15%;
+    box-shadow: 1px 1px 8px rgb(110, 110, 110);
+    background-color:rgb(255, 251, 246);}
+
+.boxgrid{
+    border: 2px solid rgb(186, 186, 186);
+    padding: 50px;
+    margin: 45px;
+    border-radius: 15%;
+    background-color:rgb(255, 251, 246);
+    box-shadow: 1px 1px 15px rgb(140, 140, 140);
+}
+
+.boxgrid h3{
+    color: #FF9051;
+    font-size: 40px !important;
+    padding-bottom: 13px;
+}
+
+.form-outline{
+    width: 500px;
+}
+
+.fa-brands:hover{
+    
+        color: #FF9051 !important;
+        transition: .4s;
+    
+}
+.fa-brands{
+    width: 50px;
+    height: 50px;
+}
+
+.fa-solid{
+    color: #FF9051;
+}
+
+.star{
+    color: rgb(28, 28, 28);
+}
+/* 
+modal */
+
+.text-design{
+    font-size: 80px !important;
+    letter-spacing: 4px;
+}
+
+.design{
+    filter: drop-shadow(2px 2px 20px #ffca95);
+}
+
+.btn-group{
+    box-shadow: 1px 1px 10px rgb(171, 200, 216);
+}
+
+#gallery img{
+    box-shadow: 1px 1px 10px rgb(119, 119, 119);
+    
+}
+
+.card{
+    box-shadow: 1px 1px 15px rgb(107, 107, 107);
+}
+
+
+.btn-group .btn{
+    border: 1px solid hsl(202, 100%, 88%);
+}
+
